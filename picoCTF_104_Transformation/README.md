@@ -34,3 +34,7 @@ Based on all this, and the fact that this was listed under _reverse_ engineering
 I will test out this theory by trying to apply the reverse of this command to the string in `enc`.
 
 ---
+
+I have further analysed the python command. Assumming it was meant for the actual flag, `flag[i]` refers to some ASCII character, i.e., an 8-bit character. Judging by the left shift operation: `ord(flag[i]) << 8` and the summation operation: `(ord(flag[i]) << 8) + ord(flag[i + 1])`, it seems that I need to look at the 2 lower bytes of each character and ignore the third byte.
+
+---
