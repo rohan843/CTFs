@@ -1,6 +1,6 @@
 # Stonks
 
-This challenge is availabe [here](https://play.picoctf.org/practice/challenge/105?page=1&solved=1).
+This challenge is available [here](https://play.picoctf.org/practice/challenge/105?page=1&solved=1).
 
 It gives us a file called `vuln.c` and a bash command `nc mercury.picoctf.net 33411`.
 
@@ -35,3 +35,5 @@ It _is_ possible that the code we are given is not the code actually running, bu
 I'll keep trying out ideas here...
 
 ---
+
+I was not able to find any clue as to the next steps. Before consulting the hint on picoCTF website, I decided to google _binary exploitation_ (the tag for this problem) and found this website: [https://ctf101.org/](https://ctf101.org/). It might give some useful information.
