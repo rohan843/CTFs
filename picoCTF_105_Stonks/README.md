@@ -21,3 +21,17 @@ FILE *f = fopen("api","r");
 This suggests that we need access to the contents of the local file `api` as it is being refered to as the "Flag" file in the error message.
 
 ---
+
+Accessing the file `api` is turning out to be complex. The following line:
+
+```c
+fgets(api_buf, FLAG_BUFFER, f);
+```
+
+stores the contents of the file in the local char array `api_buf` (that was dynamically allocated via `malloc`), but `api_buf` is not used anywhere else in the C program. This makes it difficult to access it remotely.
+
+It _is_ possible that the code we are given is not the code actually running, but an older version of it, because of the multiple `TODO`s.
+
+I'll keep trying out ideas here...
+
+---
