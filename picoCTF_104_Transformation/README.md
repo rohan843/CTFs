@@ -38,3 +38,14 @@ I will test out this theory by trying to apply the reverse of this command to th
 I have further analysed the python command. Assumming it was meant for the actual flag, `flag[i]` refers to some ASCII character, i.e., an 8-bit character. Judging by the left shift operation: `ord(flag[i]) << 8` and the summation operation: `(ord(flag[i]) << 8) + ord(flag[i + 1])`, it seems that I need to look at the 2 lower bytes of each character and ignore the third byte.
 
 ---
+
+It works!
+
+I extracted 2 ASCII characters from every character in `enc` using:
+
+```python
+char1 = chr(ord(charFromEncFile) >> 8)
+char2 = chr(ord(charFromEncFile) & ((1 << 8) - 1))
+```
+
+Concatenating all these together produced the flag.
