@@ -26,3 +26,11 @@ ValueError: chr() arg not in range(0x110000)
 ```
 
 Moreover, even if this error had not come up, there would have been an out-of-bounds access when `i` will become `18`, considering that `len(flag)` is `19` (if we assume that the string in `enc` is the `flag`).
+
+---
+
+Based on all this, and the fact that this was listed under _reverse_ engineering, I'm now considering that maybe `flag` actually refers to the actual flag, and that the contents of `enc` file were generated using the python command.
+
+I will test out this theory by trying to apply the reverse of this command to the string in `enc`.
+
+---
