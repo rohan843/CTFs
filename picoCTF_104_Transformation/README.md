@@ -15,3 +15,14 @@ We are also given this python-ish command:
 ```python
 ''.join([chr((ord(flag[i]) << 8) + ord(flag[i + 1])) for i in range(0, len(flag), 2)])
 ```
+
+Looking at this command, it can be assummed that `flag` is the string of text in the file `enc`. There is one problem though - the command when run as-is gives the following error:
+
+```python
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 1, in <listcomp>
+ValueError: chr() arg not in range(0x110000)
+```
+
+Moreover, even if this error had not come up, there would have been an out-of-bounds access when `i` will become `18`, considering that `len(flag)` is `19` (if we assume that the string in `enc` is the `flag`).
