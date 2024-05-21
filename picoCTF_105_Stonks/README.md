@@ -49,3 +49,9 @@ This suggests that the "API Token" that the server asks for (which was as of now
 Ok. I didn't get any ideas here, so I watched [this](https://www.youtube.com/watch?v=2gnaG4ocGLA) walkthrough. It was HIGHLY insightful.
 
 It seems that we needed to access the contents of the stack to get the value pointed to by `api_buf` (why we needed the stack and not the heap is still something I'm usure about).
+
+Anyway, what we use here is called a **Format String Vulnerability**. Essentially, `printf` was being given an input by us (`user_buf`). But, `printf` expects a format string as an input. Normally, if we give a format string, we also provide actual values to show. Here however, considering how there are no values, printf will just read whatever is on the stack (up to the amount it needs to as per our input).
+
+The `api_buf` value is on the stack (again, I'm unsure as to why it's not on the heap, but I'll see that later).
+
+We simply give our api token to be a format string with lots of `%x`s to print the contents of the stack byte by byte, then convert each byte into ascii and try to identify the flag. (The flag will be kind of reversed by parts because of the little endian and big endian schemes.)
