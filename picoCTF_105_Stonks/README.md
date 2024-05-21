@@ -61,3 +61,9 @@ We simply give our api token to be a format string with lots of `%x`s to print t
 It works! I followed the procedure, got a large string of stack bytes, converted them to ascii, and sure enough, there were letters spelling `ocip` (`pico` in reverse) The rest was just reversing groups of 4 following bytes until a `}` was obtained.
 
 One problem remains though - why was the flag, i.e., the contents of the `api_buf` stored on the stack? `malloc` was used, which suggests that the string itself must be on the heap, the pointer to str base address of the string must be on the stack.
+
+---
+
+Ok, found the issue. `malloc` wasn't used to allocate memory for `api_buf`. It was created as a stack variable all along! Missed that.
+
+Clearly its contents will be on the stack only.
