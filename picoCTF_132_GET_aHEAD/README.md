@@ -23,3 +23,7 @@ There is no "input" as such though, as the only entity in the form is the button
 ---
 
 I have made a POST request, but have received the same HTML, only with `blue` as the background color. As a precaution, I checked the response headers. There was only one - the `Content-type`, with the usual data.
+
+---
+
+Ok, turns out PHP wasn't involved. The trick was in the name all along - a*HEAD*. An HTTP `HEAD` request returned the flag as a header.
