@@ -43,3 +43,9 @@ I was not able to find any clue as to the next steps. Before consulting the hint
 So.. that didn't help much. I have consulted the available hint. The hint is: `Okay, maybe I'd believe you if you find my API key.`
 
 This suggests that the "API Token" that the server asks for (which was as of now ignored in `vuln.c`) is actually used in the code being executed, and it is what will help us get the `api_buf` (somehow).
+
+---
+
+Ok. I didn't get any ideas here, so I watched [this](https://www.youtube.com/watch?v=2gnaG4ocGLA) walkthrough. It was HIGHLY insightful.
+
+It seems that we needed to access the contents of the stack to get the value pointed to by `api_buf` (why we needed the stack and not the heap is still something I'm usure about).
