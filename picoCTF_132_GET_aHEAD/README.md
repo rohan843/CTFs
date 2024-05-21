@@ -13,3 +13,7 @@ I have `curl`ed the HTML response from the server into a file `red.html`. On Fir
 There seems no JS involved whatsoever. There was an `action` attribute in a `form` element with the value `index.php`. There was a `GET` request and another `POST` request made with this same `action` value.
 
 This suggests there is a PHP file `index.php` at the server. Possibly the one that contains the flag.
+
+---
+
+I made a `GET` request to the `index.php` endpoint (`curl http://mercury.picoctf.net:15931/index.php`) but got the same HTML back. Based on the [last](../picoCTF_105_Stonks/) CTF I did, I've learned that focussing on user inputs rather than outputs is more useful for exploitation. Therefore, I'll focus on the `POST` request to this endpoint now.
