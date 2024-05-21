@@ -37,3 +37,9 @@ I'll keep trying out ideas here...
 ---
 
 I was not able to find any clue as to the next steps. Before consulting the hint on picoCTF website, I decided to google _binary exploitation_ (the tag for this problem) and found this website: [https://ctf101.org/](https://ctf101.org/). It might give some useful information.
+
+---
+
+So.. that didn't help much. I have consulted the available hint. The hint is: `Okay, maybe I'd believe you if you find my API key.`
+
+This suggests that the "API Token" that the server asks for (which was as of now ignored in `vuln.c`) is actually used in the code being executed, and it is what will help us get the `api_buf` (somehow).
