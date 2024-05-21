@@ -7,3 +7,9 @@ It gives us a link: `http://mercury.picoctf.net:15931/` and asks us to find the 
 ---
 
 I have `curl`ed the HTML response from the server into a file `red.html`. On Firefox, it simply displays a webpage with a red background (hence the name of the file) with 2 buttons that change the color of the page to blue or to red.
+
+---
+
+There seems no JS involved whatsoever. There was an `action` attribute in a `form` element with the value `index.php`. There was a `GET` request and another `POST` request made with this same `action` value.
+
+This suggests there is a PHP file `index.php` at the server. Possibly the one that contains the flag.
