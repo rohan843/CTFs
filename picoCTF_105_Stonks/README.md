@@ -55,3 +55,9 @@ Anyway, what we use here is called a **Format String Vulnerability**. Essentiall
 The `api_buf` value is on the stack (again, I'm unsure as to why it's not on the heap, but I'll see that later).
 
 We simply give our api token to be a format string with lots of `%x`s to print the contents of the stack byte by byte, then convert each byte into ascii and try to identify the flag. (The flag will be kind of reversed by parts because of the little endian and big endian schemes.)
+
+---
+
+It works! I followed the procedure, got a large string of stack bytes, converted them to ascii, and sure enough, there were letters spelling `ocip` (`pico` in reverse) The rest was just reversing groups of 4 following bytes until a `}` was obtained.
+
+One problem remains though - why was the flag, i.e., the contents of the `api_buf` stored on the stack? `malloc` was used, which suggests that the string itself must be on the heap, the pointer to str base address of the string must be on the stack.
