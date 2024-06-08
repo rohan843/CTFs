@@ -47,3 +47,7 @@ There were 3 bitmap pictures in the transfer, I viewed them normally. They seem 
 I used `steghide` to try and extract information from the images, but due to no passphrase, none was extracted.
 
 I have 2 text files `instructions.txt` and `plan`. They seem to have gibberish, but maybe a caesar cipher is in place there.
+
+---
+
+Ok, some progress - a rotation of 13 worked to decrypt the caesar cipher on `instructions.txt`. It seems to point us to the file `flag`. I'll try the same.
