@@ -23,3 +23,11 @@ I filtered out the non - TFTP packets, and judging by the first packet's body:
 ![TFTP Headers of the first TFTP packet](./tftp_packet_1.png)
 
 It seems that this `instructions.txt` file is what I'm after. Now to figure out a way to extract it. At this point, I think that the contents of the file are in the UDP stream of this packet.
+
+---
+
+The packet says that the `octet` type of transfer was performed. According to wikipedia:
+
+> "Octet allows for the transfer of arbitrary raw 8-bit bytes, with the received file resulting byte-per-byte identical to the one sent. More correctly, if a host receives an octet file and then returns it, the returned file must be identical to the original."
+
+This means I need to extract the bytes and re-assemble them together into the resultant file.
