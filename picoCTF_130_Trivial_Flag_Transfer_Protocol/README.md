@@ -5,3 +5,5 @@ This is the last CTF in the picoCTF Forensics playlist, available [here](https:/
 ---
 
 On a first glance, this capture contains information of 152413 packets. Almost all of these packets are of a protocol called **TFTP** (trivial file transfer protocol). I've not used this before, so I'll look up its format.
+
+Other than TFTP, there are a few ARP and SSDP packets, small in number (tot. 18) to be manually checked.
