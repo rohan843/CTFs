@@ -31,3 +31,9 @@ The packet says that the `octet` type of transfer was performed. According to wi
 > "Octet allows for the transfer of arbitrary raw 8-bit bytes, with the received file resulting byte-per-byte identical to the one sent. More correctly, if a host receives an octet file and then returns it, the returned file must be identical to the original."
 
 This means I need to extract the bytes and re-assemble them together into the resultant file.
+
+---
+
+Ok, I have now used the _File -> Export Objects -> TFTP_ option from the wireshark menu, apparently there were quite a few files in the transfer:
+
+![The files extracted from the packet capture](./files_in_capture.png)
