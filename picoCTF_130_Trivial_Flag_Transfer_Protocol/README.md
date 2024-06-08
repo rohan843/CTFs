@@ -63,3 +63,7 @@ I've been reading about `.deb` files. They are debian package files that can be 
 ---
 
 Ok, so the `program.deb` just turned out to be `steghide`. I unpacked it and used it but still, no passphrase is available.
+
+---
+
+Using `stegseek` I've managed to ascertain that the file `picture2.bmp` contains some hidden data based on the fact that it was the only file in which a seed was found. The encryption algo is what I think DES-3, so without the password its pretty futile but I'm trying to figure out if there's any way to extract the encrypted data.
