@@ -54,4 +54,4 @@ Ok, some progress - a rotation of 13 worked to decrypt the caesar cipher on `ins
 
 ---
 
-Ok, the plan also got decrypted similarly. It seems that the flag is in the photos and that the file `program.deb` is key to access it.
+Ok, the plan also got decrypted similarly. It seems that the flag is in the photos and that the file `program.deb` is key to accessing it.
