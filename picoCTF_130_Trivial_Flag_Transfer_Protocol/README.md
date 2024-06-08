@@ -59,3 +59,7 @@ Ok, the plan also got decrypted similarly. It seems that the flag is in the phot
 ---
 
 I've been reading about `.deb` files. They are debian package files that can be installed. I am also looking into the `dpkg` command to manipulate these files.
+
+---
+
+Ok, so the `program.deb` just turned out to be `steghide`. I unpacked it and used it but still, no passphrase is available.
