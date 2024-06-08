@@ -67,3 +67,7 @@ Ok, so the `program.deb` just turned out to be `steghide`. I unpacked it and use
 ---
 
 Using `stegseek` I've managed to ascertain that the file `picture2.bmp` contains some hidden data based on the fact that it was the only file in which a seed was found. The encryption algo is what I think DES-3, so without the password its pretty futile but I'm trying to figure out if there's any way to extract the encrypted data.
+
+---
+
+Now, I finally have found the flag. For the passphrase, I had to refer to [this](https://medium.com/@quackquackquack/picoctf-trivial-flag-transfer-protocol-writeup-20c5d2d0dfdf) article. Turns out the passphrase was provided to us all along!
