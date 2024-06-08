@@ -41,3 +41,9 @@ Ok, I have now used the _File -> Export Objects -> TFTP_ option from the wiresha
 ---
 
 There were 3 bitmap pictures in the transfer, I viewed them normally. They seem to be normal pictures of mountains and scenery. I will perform usual steganalysis on them.
+
+---
+
+I used `steghide` to try and extract information from the images, but due to no passphrase, none was extracted.
+
+I have 2 text files `instructions.txt` and `plan`. They seem to have gibberish, but maybe a caesar cipher is in place there.
