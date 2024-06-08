@@ -37,3 +37,7 @@ This means I need to extract the bytes and re-assemble them together into the re
 Ok, I have now used the _File -> Export Objects -> TFTP_ option from the wireshark menu, apparently there were quite a few files in the transfer:
 
 ![The files extracted from the packet capture](./files_in_capture.png)
+
+---
+
+There were 3 bitmap pictures in the transfer, I viewed them normally. They seem to be normal pictures of mountains and scenery. I will perform usual steganalysis on them.
