@@ -20,7 +20,11 @@ For an exact reference, google the file extension to learn more about the file f
 
 ## Image Files (BMP, PNG, JPG, ...)
 
-Image files almost always require some sort of steganalysis.
+Image files almost always require some sort of steganalysis. When such files are received, use `exiftool` to get information about them. Often, PNGs will have extra data appended after the `IEND` chunk (after image end).
+
+A tool that can be used for steganalysis is `zsteg`. Use the command `zsteg -a <file-name>` to get every possible extraction applied to the file. Moreover, `zsteg` will also report the byte offset in a PNG should extra data be appended which then can be extracted using `dd`.
+
+An important note in bitmap (BMP) files is that they may have mangled header information, such as incorrect height or width. Use `hexedit` to increase the heights and widths just to check if any parts of the image were hidden from view. An online reference for the BMP format can be useful for this: [https://en.wikipedia.org/wiki/BMP_file_format#Bitmap_file_header](https://en.wikipedia.org/wiki/BMP_file_format#Bitmap_file_header).
 
 ## Text Data - ASCII
 
