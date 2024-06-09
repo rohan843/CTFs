@@ -19,3 +19,7 @@ I have extracted the appended data using `dd` and have unzipped it to get anothe
 ---
 
 Another image of a doll, smaller than the first 2.
+
+---
+
+And, another doll image. This time, the doll size is the same, but the image itself has become low res.
