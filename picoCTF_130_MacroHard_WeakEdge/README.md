@@ -21,3 +21,11 @@ On opening the file, a message had popped up saying that there was some content 
 ---
 
 I have found out that PPT files are just zip archives, and have unzipped the file. I will go through the contents.
+
+---
+
+I have finally solved it with some help from [this](https://medium.com/@quackquackquack/picoctf-writeup-marcohard-weakedge-652a4a9bc29a) writeup. There was a hidden file with a string that had the base 64 version of the flag.
+
+---
+
+Based on this CTF, I think I'll create a list of strategies I can follow in future CTFs in this repo.
