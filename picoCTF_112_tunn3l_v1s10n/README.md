@@ -21,3 +21,5 @@ I ran `zsteg` on the bitmap image. It said that there was extra data after the i
 ---
 
 Finally, I had to refer to a [writeup](https://ctftime.org/writeup/28157) but it turns out that the image height was also wrong in the binary. Increasing it displayed the flag.
+
+> Note to self: BMP images may have wrong heights/widths specified.
