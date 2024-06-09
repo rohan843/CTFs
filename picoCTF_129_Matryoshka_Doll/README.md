@@ -23,3 +23,7 @@ Another image of a doll, smaller than the first 2.
 ---
 
 And, another doll image. This time, the doll size is the same, but the image itself has become low res.
+
+---
+
+Finally, the last image's trailing data was a text file `flag.txt`, that contained the flag.
