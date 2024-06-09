@@ -8,10 +8,28 @@ The headings will be alphabetical.
 
 - [CTF Strategies](#ctf-strategies)
   - [Contents](#contents)
+  - [Directories](#directories)
   - [Exotic Files](#exotic-files)
   - [Image Files (BMP, PNG, JPG, ...)](#image-files-bmp-png-jpg-)
   - [Random Looking File/Binary Data](#random-looking-filebinary-data)
   - [Text Data - ASCII](#text-data---ascii)
+
+## Directories
+
+Directory contents can be browsed using the usual `cd` and `ls -a`. For viewing all files at once, use `ls -R`, and for viewing files in a fuzzy string matching mode, use the tool [`fzf`](https://github.com/junegunn/fzf).
+
+Lookout for suspicious names like:
+
+1. `hidden`
+2. `flag`
+
+And also for actionable files:
+
+1. text files (`.txt`)
+2. `.png|jpg|bmp`
+3. `.bin` or other binaries
+4. ELF files
+5. Code files
 
 ## Exotic Files
 
