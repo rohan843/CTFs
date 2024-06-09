@@ -17,3 +17,7 @@ This allowed the image to be opened in viewer, but the only text in the image wa
 ---
 
 I ran `zsteg` on the bitmap image. It said that there was extra data after the image end. I have extracted that data using `dd` but still have no idea what this data is. Right now, it just seems to be random bytes that break `zsh` display when output using `cat`.
+
+---
+
+Finally, I had to refer to a [writeup](https://ctftime.org/writeup/28157) but it turns out that the image height was also wrong in the binary. Increasing it displayed the flag.
