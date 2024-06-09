@@ -11,3 +11,7 @@ As a pre-check, I tried opening the ppt in MS Powerpoint, but it said that the f
 ---
 
 I converted the document to pdf using cloudconvert, but it was only a pdf document with 57 pages (slides) and the only visible text was on the first slide, that said `Forensics is fun`.
+
+---
+
+I have now run the file on windows in MS PowerPoint. To no avail. I did find a macro but when I looked at its code, it was not much use. It seemed to be a normal string assignment to a variable.
