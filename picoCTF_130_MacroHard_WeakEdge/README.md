@@ -17,3 +17,7 @@ I converted the document to pdf using cloudconvert, but it was only a pdf docume
 I have now run the file on windows in MS PowerPoint. To no avail. I did find a macro but when I looked at its code, it was not much use. It seemed to be a normal string assignment to a variable.
 
 On opening the file, a message had popped up saying that there was some content that could not be read. I think that that content contains the flag.
+
+---
+
+I have found out that PPT files are just zip archives, and have unzipped the file. I will go through the contents.
