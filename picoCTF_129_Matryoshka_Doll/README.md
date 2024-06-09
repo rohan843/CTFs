@@ -15,3 +15,7 @@ I ran `zsteg -a` on the file, and it reported that the extra data at the end is 
 ---
 
 I have extracted the appended data using `dd` and have unzipped it to get another `png` image. This image, too is an image of a doll, only smaller than the previous one. There is more trailing data. I will repeat the process I just did.
+
+---
+
+Another image of a doll, smaller than the first 2.
