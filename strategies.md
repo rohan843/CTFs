@@ -31,6 +31,8 @@ An important note in bitmap (BMP) files is that they may have mangled header inf
 
 Sometimes weird files may be extracted/received that have no extension or magic bytes in the header. These might be ZIP archives. Try to unzip them.
 
+Binary files can be viewed using `xxd`. Try `xxd -g 1 <file-name> | less` or `xxd -R always -g 1 <file-name> | less - R` if the terminal supports 8-bit color display to view them.
+
 ## Text Data - ASCII
 
 If we have ascii text data, it might be [caesar ciphered](https://cryptii.com/pipes/caesar-cipher) or [base64 encoded](https://www.base64decode.org/). A give away of base64 is `=` signs at the end.
