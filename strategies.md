@@ -43,13 +43,15 @@ Image files almost always require some sort of steganalysis. When such files are
 
 A tool that can be used for steganalysis is `zsteg`. Use the command `zsteg -a <file-name>` to get every possible extraction applied to the file. Moreover, `zsteg` will also report the byte offset in a PNG should extra data be appended which then can be extracted using `dd`.
 
+Also, `steghide` and `stegseek` may be used, esp. in case some passphrase is available or if `zsteg` fails. Try `stegseek --seed <file-name>` to check if any one of $2^{32}$ possible seeds were used. This can help to determine if `steghide` was used to hide data.
+
 An important note in bitmap (BMP) files is that they may have mangled header information, such as incorrect height or width. Use `hexedit` to increase the heights and widths just to check if any parts of the image were hidden from view. An online reference for the BMP format can be useful for this: [https://en.wikipedia.org/wiki/BMP_file_format#Bitmap_file_header](https://en.wikipedia.org/wiki/BMP_file_format#Bitmap_file_header).
 
 ## Random Looking File/Binary Data
 
 Sometimes weird files may be extracted/received that have no extension or magic bytes in the header. These might be ZIP archives. Try to unzip them.
 
-Binary files can be viewed using `xxd`. Try `xxd -g 1 <file-name> | less` or `xxd -R always -g 1 <file-name> | less - R` if the terminal supports 8-bit color display to view them.
+Binary files can be viewed using `xxd`. Try `xxd -g 1 <file-name> | less` or `xxd -R always -g 1 <file-name> | less -R` if the terminal supports 8-bit color display to view them.
 
 ## Text Data - ASCII
 
