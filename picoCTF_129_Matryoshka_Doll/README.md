@@ -11,3 +11,7 @@ I have used `exiftool` to determine the metadata of the file. Firstly, this is N
 ---
 
 I ran `zsteg -a` on the file, and it reported that the extra data at the end is a ZIP archive. I'll try extracting and un-zipping it.
+
+---
+
+I have extracted the appended data using `dd` and have unzipped it to get another `png` image. This image, too is an image of a doll, only smaller than the previous one.
