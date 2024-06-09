@@ -10,6 +10,7 @@ The headings will be alphabetical.
   - [Contents](#contents)
   - [Exotic Files](#exotic-files)
   - [Image Files (BMP, PNG, JPG, ...)](#image-files-bmp-png-jpg-)
+  - [Random Looking File/Binary Data](#random-looking-filebinary-data)
   - [Text Data - ASCII](#text-data---ascii)
 
 ## Exotic Files
@@ -25,6 +26,10 @@ Image files almost always require some sort of steganalysis. When such files are
 A tool that can be used for steganalysis is `zsteg`. Use the command `zsteg -a <file-name>` to get every possible extraction applied to the file. Moreover, `zsteg` will also report the byte offset in a PNG should extra data be appended which then can be extracted using `dd`.
 
 An important note in bitmap (BMP) files is that they may have mangled header information, such as incorrect height or width. Use `hexedit` to increase the heights and widths just to check if any parts of the image were hidden from view. An online reference for the BMP format can be useful for this: [https://en.wikipedia.org/wiki/BMP_file_format#Bitmap_file_header](https://en.wikipedia.org/wiki/BMP_file_format#Bitmap_file_header).
+
+## Random Looking File/Binary Data
+
+Sometimes weird files may be extracted/received that have no extension or magic bytes in the header. These might be ZIP archives. Try to unzip them.
 
 ## Text Data - ASCII
 
