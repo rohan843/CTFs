@@ -7,3 +7,7 @@ We are given a Macro enabled PowerPoint presentation (`.pptm`) and are asked to 
 ---
 
 As a pre-check, I tried opening the ppt in MS Powerpoint, but it said that the format of the file was incorrect and that auto repair could only be done if the file is trusted. I have cancelled that for now. I'm trying to convert the ppt into pdf to view the contents, if the bad format glitch can be taken care of.
+
+---
+
+I converted the document to pdf using cloudconvert, but it was only a pdf document with 57 pages (slides) and the only visible text was on the first slide, that said `Forensics is fun`.
