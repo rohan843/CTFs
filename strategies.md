@@ -9,6 +9,7 @@ The headings will be alphabetical.
 - [CTF Strategies](#ctf-strategies)
   - [Contents](#contents)
   - [Exotic Files](#exotic-files)
+  - [Image Files (BMP, PNG, JPG, ...)](#image-files-bmp-png-jpg-)
   - [Text Data - ASCII](#text-data---ascii)
 
 ## Exotic Files
@@ -16,6 +17,10 @@ The headings will be alphabetical.
 There might be unconventional files provided at times, such as powerpoint files (`.ppt`). These are usually ZIP archives and can be unzipped to reveal usual files and data.
 
 For an exact reference, google the file extension to learn more about the file format.
+
+## Image Files (BMP, PNG, JPG, ...)
+
+Image files almost always require some sort of steganalysis.
 
 ## Text Data - ASCII
 
