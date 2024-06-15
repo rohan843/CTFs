@@ -11,6 +11,7 @@ The headings will be alphabetical.
   - [Directories](#directories)
   - [Exotic Files](#exotic-files)
   - [Image Files (BMP, PNG, JPG, ...)](#image-files-bmp-png-jpg-)
+  - [Packet Captures](#packet-captures)
   - [Random Looking File/Binary Data](#random-looking-filebinary-data)
   - [Text Data - ASCII](#text-data---ascii)
 
@@ -46,6 +47,8 @@ A tool that can be used for steganalysis is `zsteg`. Use the command `zsteg -a <
 Also, `steghide` and `stegseek` may be used, esp. in case some passphrase is available or if `zsteg` fails. Try `stegseek --seed <file-name>` to check if any one of $2^{32}$ possible seeds were used. This can help to determine if `steghide` was used to hide data.
 
 An important note in bitmap (BMP) files is that they may have mangled header information, such as incorrect height or width. Use `hexedit` to increase the heights and widths just to check if any parts of the image were hidden from view. An online reference for the BMP format can be useful for this: [https://en.wikipedia.org/wiki/BMP_file_format#Bitmap_file_header](https://en.wikipedia.org/wiki/BMP_file_format#Bitmap_file_header).
+
+## Packet Captures
 
 ## Random Looking File/Binary Data
 
