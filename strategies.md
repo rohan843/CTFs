@@ -50,6 +50,8 @@ An important note in bitmap (BMP) files is that they may have mangled header inf
 
 ## Packet Captures
 
+Open them up in wireshark. Use `Export Objects` to see if any files can be extracted from them.
+
 ## Random Looking File/Binary Data
 
 Sometimes weird files may be extracted/received that have no extension or magic bytes in the header. These might be ZIP archives. Try to unzip them.
