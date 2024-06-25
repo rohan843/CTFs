@@ -7,3 +7,9 @@ It gives us some file that has been "corrupted". By looking at the file in text 
 ---
 
 I've restored the header and am now working on chunks.
+
+---
+
+I have restored the `IHDR` length value to 13 (`00 00 00 0a` in hex) and opened the image. It's just a red rectangle, with no data.
+
+It's possible there is some incorrect height/width written here, and that this is not the complete image.
