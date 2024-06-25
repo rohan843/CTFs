@@ -55,7 +55,7 @@ Open them up in wireshark. Use `Export Objects` to see if any files can be extra
 
 ### DNS Packets
 
-If there are DNS packets (which there usually are, but pay attention to _how many_ as compared to the total packet capture size), this could be a DNS data exfiltration attack. Check for data in domain names, such as `<data string>.example.com`.
+If there are DNS packets (which there usually are, but pay attention to _how many_ as compared to the total packet capture size), this could be a **DNS data exfiltration attack**. Check for data in domain names, such as `<data string>.example.com`.
 
 ## Random Looking File/Binary Data
 
