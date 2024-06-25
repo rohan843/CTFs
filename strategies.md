@@ -49,6 +49,8 @@ Also, `steghide` and `stegseek` may be used, esp. in case some passphrase is ava
 
 An important note in bitmap (BMP) files is that they may have mangled header information, such as incorrect height or width. Use `hexedit` to increase the heights and widths just to check if any parts of the image were hidden from view. An online reference for the BMP format can be useful for this: [https://en.wikipedia.org/wiki/BMP_file_format#Bitmap_file_header](https://en.wikipedia.org/wiki/BMP_file_format#Bitmap_file_header).
 
+In image files, if the above techniques fail, try editing the image itself. Try changing the bit depth and similar things (black and white to RGB and vice versa).
+
 ## Packet Captures
 
 Open them up in wireshark. Use `Export Objects` to see if any files can be extracted from them.
