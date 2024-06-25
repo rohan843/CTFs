@@ -17,3 +17,7 @@ It's possible there is some incorrect height/width written here, and that this i
 ---
 
 I tried but the CRC didn't check out. I think this is a whole image, but with steganography. I used `zsteg -a`, but no info was revealed.
+
+---
+
+I had to see a solution for further hints, so I saw [this](https://medium.com/@matus.vaclav1/picoctf-advanced-potion-making-eff6b4ebbdcf) article. The last step was viewing the image in black and white, that displayed the flag.
