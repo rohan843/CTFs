@@ -10,6 +10,6 @@ I exported all objects detected in the capture, which were around 5480 in number
 
 ---
 
-I've seen a solution now. The hint was in the phrase `red herring`, that is used to refer to intentionally placed clues to misguide someone.
+I've seen a [solution](https://www.youtube.com/watch?v=I_zb9ybAjvg) now. The hint was in the phrase `red herring`, that is used to refer to intentionally placed clues to misguide someone.
 
 There were multiple DNS requests to subdomains of a `redshrimpandherring.com`, combining which gave us a base 64 encoded flag.
