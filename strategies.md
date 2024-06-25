@@ -12,6 +12,7 @@ The headings will be alphabetical.
   - [Exotic Files](#exotic-files)
   - [Image Files (BMP, PNG, JPG, ...)](#image-files-bmp-png-jpg-)
   - [Packet Captures](#packet-captures)
+    - [DNS Packets](#dns-packets)
   - [Random Looking File/Binary Data](#random-looking-filebinary-data)
   - [Text Data - ASCII](#text-data---ascii)
 
@@ -51,6 +52,10 @@ An important note in bitmap (BMP) files is that they may have mangled header inf
 ## Packet Captures
 
 Open them up in wireshark. Use `Export Objects` to see if any files can be extracted from them.
+
+### DNS Packets
+
+If there are DNS packets (which there usually are, but pay attention to _how many_ as compared to the total packet capture size), this could be a DNS data exfiltration attack. Check for data in domain names, such as `<data string>.example.com`.
 
 ## Random Looking File/Binary Data
 
