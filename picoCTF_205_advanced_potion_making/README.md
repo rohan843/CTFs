@@ -6,4 +6,4 @@ It gives us some file that has been "corrupted". By looking at the file in text 
 
 ---
 
-I've restored the header and am now working on headers.
+I've restored the header and am now working on chunks.
