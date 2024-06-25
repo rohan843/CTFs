@@ -13,3 +13,7 @@ I've restored the header and am now working on chunks.
 I have restored the `IHDR` length value to 13 (`00 00 00 0a` in hex) and opened the image. It's just a red rectangle, with no data.
 
 It's possible there is some incorrect height/width written here, and that this is not the complete image.
+
+---
+
+I tried but the CRC didn't check out. I think this is a whole image, but with steganography. I used `zsteg -a`, but no info was revealed.
