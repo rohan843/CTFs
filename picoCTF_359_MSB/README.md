@@ -6,4 +6,4 @@ It gives us a PNG file, with a suspected steganography.
 
 ---
 
-I ran `zsteg` but didn't get anything. There does seem some data hidden in the image though, as it looks corrupted.
+I ran `zsteg` but didn't get anything. There does seem some data hidden in the image though, as it looks corrupted. I'll try editing this pic somehow.
