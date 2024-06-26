@@ -11,3 +11,7 @@ I ran `zsteg` but didn't get anything. There does seem some data hidden in the i
 ---
 
 Editing doesn't seem to work. I'll think of something else.
+
+---
+
+I saw the tool `stegsolve` used in a writeup, and used it to view the image in various planes. I then used its extract data from bit position feature to extract part of a book! Text search showed where the flag was hidden.
