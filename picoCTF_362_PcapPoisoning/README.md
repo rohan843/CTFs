@@ -10,4 +10,4 @@ One of the initial packets is a malformed DNS packet, whose text says `flagisclo
 
 ---
 
-It seemed like a port scan at first. The TCP packets went 
+It seemed like a port scan at first. The TCP packets went upto port 1000, and the packet just after that was a TCP retransmission that contained the flag in plain text.
