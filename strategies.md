@@ -51,6 +51,8 @@ An important note in bitmap (BMP) files is that they may have mangled header inf
 
 In image files, if the above techniques fail, try editing the image itself. Try changing the bit depth and similar things (black and white to RGB and vice versa).
 
+Also, `stegsolve` can be used to view various planes of images and with various color maps. It can also extract individual bits of data from pixels. Use [this](https://github.com/zardus/ctf-tools/blob/master/stegsolve/install) link for download instructions, and `java -jar stegsolve.jar` to execute it.
+
 ## Packet Captures
 
 Open them up in wireshark. Use `Export Objects` to see if any files can be extracted from them.
