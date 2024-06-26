@@ -7,3 +7,7 @@ It gives us a packet capture that I have opened in wireshark.
 ---
 
 One of the initial packets is a malformed DNS packet, whose text says `flagisclose`.
+
+---
+
+It seemed like a port scan at first. The TCP packets went 
