@@ -70,3 +70,5 @@ Binary files can be viewed using `xxd`. Try `xxd -g 1 <file-name> | less` or `xx
 ## Text Data - ASCII
 
 If we have ascii text data, it might be [caesar ciphered](https://cryptii.com/pipes/caesar-cipher) or [base64 encoded](https://www.base64decode.org/). A give away of base64 is `=` signs at the end.
+
+> All base64 strings' lengths need to be a multiple of 3. So, for some possible base64 encoded strings, we need to append `=`'s or prepend a dummy character such as `a` to get the decoding right.
