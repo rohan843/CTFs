@@ -9,6 +9,7 @@ The headings will be alphabetical.
 - [CTF Strategies](#ctf-strategies)
   - [Contents](#contents)
   - [Directories](#directories)
+  - [Disk Images](#disk-images)
   - [Exotic Files](#exotic-files)
   - [Image Files (BMP, PNG, JPG, ...)](#image-files-bmp-png-jpg-)
   - [Packet Captures](#packet-captures)
@@ -32,6 +33,8 @@ And also for actionable files:
 3. `.bin` or other binaries
 4. ELF files
 5. Code files
+
+## Disk Images
 
 ## Exotic Files
 
