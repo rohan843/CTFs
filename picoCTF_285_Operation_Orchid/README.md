@@ -9,3 +9,7 @@ The image was a `gz` archive, so I have deflated it using `gzip`. I'll run autop
 ---
 
 By browsing the partitions and performing keyword searches for `flag` among other strings, I got a file that seems to contain the flag, but its been encoded using openssl. I'll see more about the decoding process and proceed.
+
+---
+
+I found the bash history that displays the exact way someone tried to encode the flag. It even shows the encryption key used. I'll proceed to decrypt the flag accordingly.
