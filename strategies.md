@@ -36,6 +36,8 @@ And also for actionable files:
 
 ## Disk Images
 
+Open the image in Autopsy and then go through it.
+
 ## Exotic Files
 
 There might be unconventional files provided at times, such as powerpoint files (`.ppt`). These are usually ZIP archives and can be unzipped to reveal usual files and data.
