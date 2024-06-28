@@ -13,3 +13,7 @@ By browsing the partitions and performing keyword searches for `flag` among othe
 ---
 
 I found the bash history that displays the exact way someone tried to encode the flag. It even shows the encryption key used. I'll proceed to decrypt the flag accordingly.
+
+---
+
+I ran the same `openssl` command using the `-d` flag to perform decryption, and the flag was revealed.
