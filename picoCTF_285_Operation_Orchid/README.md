@@ -4,4 +4,4 @@ This CTF is available [here](https://play.picoctf.org/practice/challenge/285?cat
 
 It gives us a disk image and asks to find a flag.
 
-The image was a `gz` archive, so I have deflated it using `gzip`.
+The image was a `gz` archive, so I have deflated it using `gzip`. I'll run autopsy and open the image there.
