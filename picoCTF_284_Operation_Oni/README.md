@@ -12,4 +12,4 @@ Judging from the ssh command, we are looking for a key file in the disk.
 
 ---
 
-I found the key file in 
+I found the key file in the root directory, and using it got the flag from the remote server.
