@@ -9,3 +9,7 @@ I'll explore the disk image in autopsy.
 ---
 
 Judging from the ssh command, we are looking for a key file in the disk.
+
+---
+
+I found the key file in 
