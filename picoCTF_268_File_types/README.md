@@ -7,3 +7,7 @@ It gives us a file with the extension of `pdf`, but it actually is a shell scrip
 ---
 
 It seems that the contents of the shell script are coded to output a file. This file contains the flag information, but is a `current ar archive`. I'll try extracting the contents by looking for a suitable command.
+
+---
+
+I have extracted the contents of the `ar` directory, only to get a `cpio` archive. I'll see how to extract it next.
