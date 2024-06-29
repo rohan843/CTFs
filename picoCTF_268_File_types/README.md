@@ -22,4 +22,4 @@ After decompression, I got a `gzip` data, but on decompressing it, I get an erro
 
 ---
 
-The issue was in the extension. I renamed the file to have an extension of `.gz` and it extracted a file that came out to be `lzip` compressed data. I decompressed it to get `LZ4` data. Which decompressed to `LZMA` compressed data. This lead to `lzop`, `lzip`, and to `xz`, finally giving the flag..
+The issue was in the extension. I renamed the file to have an extension of `.gz` and it extracted a file that came out to be `lzip` compressed data. I decompressed it to get `LZ4` data. Which decompressed to `LZMA` compressed data. This lead to `lzop`, `lzip`, and to `xz`, finally giving the hex string of flag.
