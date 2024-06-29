@@ -19,3 +19,7 @@ I have extracted it using the `cpio` command, to get a `bzip2` compressed data. 
 ---
 
 After decompression, I got a `gzip` data, but on decompressing it, I get an error that there's an unknown suffix. It's possible that the file is corrupted. I'll try some methods to correct that.
+
+---
+
+The issue was in the extension. I renamed the file to have an extension of `.gz` and it extracted a file that came out to be `lzip` compressed data.
