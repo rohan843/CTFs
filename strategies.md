@@ -38,7 +38,7 @@ And also for actionable files:
 
 Open the image in Autopsy and then go through it. Try global string searches in volumes, and file name searches. Often the `bash_history` file contains valuable info as to what was last done on the machine.
 
-Also, do a search for `.txt` files. They often cont
+Also, do a search for `.txt` files. They often contain the flag.
 
 ## Exotic Files
 
