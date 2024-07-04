@@ -7,3 +7,7 @@ It gives us a pcap and asks us to find a file downloaded using torrent. It also 
 ---
 
 I've begun to analyse the pcap. I found several BT-DHT protocol packets, representing connection establishment in the network, but I'm now looking for the packets that actually contain the data, as it is possible that the file name is present in plain text.
+
+---
+
+According to chatgpt, the first task should be to locate the associated `.torrent` file. I'll see if I can extract it.
