@@ -13,3 +13,6 @@ I've begun to analyse the pcap. I found several BT-DHT protocol packets, represe
 According to chatgpt, the first task should be to locate the associated `.torrent` file. I'll see if I can extract it.
 
 It seems that we are after the infohash: `17c1e42e811a83f12c697c21bed9c72b5cb3000d`.
+
+---
+The required infohash was `e2467cbf021192c241367b892230dc1e05c0580e` as I found it later. It pointed me to a magnet link, that further pointed me to a ubuntu iso. The name of the iso was the flag.
