@@ -11,3 +11,5 @@ I've begun to analyse the pcap. I found several BT-DHT protocol packets, represe
 ---
 
 According to chatgpt, the first task should be to locate the associated `.torrent` file. I'll see if I can extract it.
+
+It seems that we are after the infohash: `17c1e42e811a83f12c697c21bed9c72b5cb3000d`.
