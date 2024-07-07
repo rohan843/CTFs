@@ -7,3 +7,7 @@ It gives us a pcap and asks us to find a password, that it says is also present 
 ---
 
 The pcap contains a lot of `802.11` packets, but nothing seems to be at or above the internet layer. I did find an SSID `Gone_Surfing`. This suggests that perhaps the password we are looking for is the wifi password.
+
+---
+
+I analysed the pcap more to find out that the wifi network is an open network, and therefore will not be associated with any password. Based on the number of packets sent by various participants, I have identified one MAC address that had performed the highest number of communications. Its filter is: `wlan.addr==1c:bf:ce:17:b0:be`. I think that it might be sending some data somewhere with some password. There was mention of WPA somewhere, so I'll look into what WPA is.
