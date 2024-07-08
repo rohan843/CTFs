@@ -23,3 +23,9 @@ I took a look at the hints, and also an online article that pointed me to a tool
 ---
 
 I found [this](https://www.youtube.com/watch?v=mAZ7PjEfWU0) walkthrough. Unfortunately, the `hashcat` attack could not be done from my VM due to lack of memory. The password found was `mickeymouse` in the video. I'll follow hereon.
+
+---
+
+The password was the flag (the stuff within the `{}` anyway).
+
+This CTF provides a good overview on how the packets in a pcap can be encrypted at a low level and how to decrypt them to get higher level packets (even though the decryption wasn't required here). I'll have to learn more about the lower 2 layers of the TCP/IP model and the security implications to better understand the process.
