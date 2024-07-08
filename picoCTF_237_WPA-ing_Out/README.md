@@ -15,3 +15,7 @@ I analysed the pcap more to find out that the wifi network is an open network, a
 ---
 
 I have found that `WPA-PSK`, which is used by WPA2 is a passkey that is used to secure communications. It makes sense to believe that this might be the passkey we are looking for.
+
+---
+
+I took a look at the hints, and also an online article that pointed me to a tool called `aircrack-ng` which might be helpful.
