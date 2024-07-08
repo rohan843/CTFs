@@ -19,3 +19,7 @@ I have found that `WPA-PSK`, which is used by WPA2 is a passkey that is used to 
 ---
 
 I took a look at the hints, and also an online article that pointed me to a tool called `aircrack-ng` which might be helpful.
+
+---
+
+I found [this](https://www.youtube.com/watch?v=mAZ7PjEfWU0) walkthrough. Unfortunately, the `hashcat` attack could not be done from my VM due to lack of memory.
