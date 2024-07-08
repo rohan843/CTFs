@@ -22,4 +22,4 @@ I took a look at the hints, and also an online article that pointed me to a tool
 
 ---
 
-I found [this](https://www.youtube.com/watch?v=mAZ7PjEfWU0) walkthrough. Unfortunately, the `hashcat` attack could not be done from my VM due to lack of memory.
+I found [this](https://www.youtube.com/watch?v=mAZ7PjEfWU0) walkthrough. Unfortunately, the `hashcat` attack could not be done from my VM due to lack of memory. The password found was `mickeymouse` in the video. I'll follow hereon.
